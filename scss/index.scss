@@ -1,0 +1,21 @@
+@import './materialize.theme.scss';
+@import './resume.scss';
+
+body {
+    display: flex !important;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    height: calc(100vh - 64px);
+    width: 100%;
+    margin: 64px 0 0 0;
+    max-width: none;
+    overflow: auto;
+}
+
+nav {
+    position: fixed;
+}

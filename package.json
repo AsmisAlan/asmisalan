@@ -1,0 +1,9 @@
+{
+  "dependencies": { 
+    "sass": "^1.32.8"
+  },
+  "scripts": {
+    "build-sass": "sass ./scss/index.scss ./css/index.css",
+    "build": "yarn build-sass"
+  }
+}

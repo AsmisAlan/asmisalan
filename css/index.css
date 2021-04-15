@@ -1,0 +1,81 @@
+body.dark {
+  background-color: #202123;
+  color: #fff;
+}
+body.dark nav {
+  background-color: #bb14bb;
+}
+body.dark .card {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+body.dark .btn {
+  background-color: #bd25a8;
+}
+body.dark .divider {
+  opacity: 0.2;
+}
+body.dark .sidenav {
+  background-color: #2d2d31;
+}
+body.dark .sidenav li a:not(.subheader) {
+  color: #89b2f5;
+}
+body.dark .sidenav li a:not(.subheader):hover {
+  background-color: #3b4043;
+}
+body.dark .sidenav li a.subheader {
+  color: #9aa0a6;
+}
+body.dark .sidenav li a .material-icons {
+  color: #9aa0a6;
+}
+body.dark .collection {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+body.dark .collection .collection-item {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+body.dark .collapsible {
+  border-color: #18191b !important;
+}
+body.dark .collapsible .collapsible-header {
+  background: #202123 !important;
+  border-color: #202123 !important;
+}
+body.dark .collapsible .collapsible-body {
+  background: #202123 !important;
+  border-color: #202123 !important;
+}
+
+.profile-drawer__photo {
+  border-radius: 50%;
+  padding: 10px;
+  width: 80%;
+}
+
+.about {
+  max-height: 100%;
+  overflow: auto;
+}
+
+body {
+  display: flex !important;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  height: calc(100vh - 64px);
+  width: 100%;
+  margin: 64px 0 0 0;
+  max-width: none;
+  overflow: auto;
+}
+
+nav {
+  position: fixed;
+}
+
+/*# sourceMappingURL=index.css.map */

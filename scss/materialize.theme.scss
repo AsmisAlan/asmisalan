@@ -1,0 +1,57 @@
+body.dark {
+    background-color: #202123;
+    color: #fff;
+
+    nav {
+        background-color: #bb14bb;
+    }
+
+    .card {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    .btn {
+        background-color: #bd25a8;
+    }
+    .divider {
+        opacity: 0.2;
+    }
+    .sidenav {
+        background-color: #2d2d31;
+        li {
+            a {
+                &:not(.subheader) {
+                    color: #89b2f5;
+                    &:hover {
+                        background-color: #3b4043;
+                    }
+                }
+                &.subheader {
+                    color: #9aa0a6;
+                }
+                .material-icons {
+                    color: #9aa0a6;
+                }
+            }
+        }
+    }
+    .collection {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        .collection-item {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    .collapsible {
+        border-color: #18191b !important;
+
+        .collapsible-header {
+            background: #202123 !important;
+            border-color: #202123 !important;
+        }
+        .collapsible-body {
+            background: #202123 !important;
+            border-color: #202123 !important;
+        }
+    }
+}
