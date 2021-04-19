@@ -10,3 +10,21 @@
     max-height: 100%;
     overflow: auto;
 }
+
+.profile-drawer {
+    &__social-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 10px !important;
+
+        path {
+            fill: white;
+        }
+
+        li {
+            height: 35px;
+            width: 35px;
+        }
+    }
+}

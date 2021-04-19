@@ -59,6 +59,20 @@ body.dark .collapsible .collapsible-body {
   overflow: auto;
 }
 
+.profile-drawer__social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 10px !important;
+}
+.profile-drawer__social-icons path {
+  fill: white;
+}
+.profile-drawer__social-icons li {
+  height: 35px;
+  width: 35px;
+}
+
 body {
   display: flex !important;
   flex-direction: column;
