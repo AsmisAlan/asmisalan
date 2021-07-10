@@ -1,17 +1,23 @@
+.about {
+    max-height: 100%;
+}
+
 .profile-drawer {
+    position: relative;
+
+    &__container::before {
+        position: absolute !important;
+    }
+
+    &__container {
+        position: sticky;
+    }
+
     &__photo {
         border-radius: 50%;
         padding: 10px;
         width: 80%;
     }
-}
-
-.about {
-    max-height: 100%;
-    overflow: auto;
-}
-
-.profile-drawer {
     &__social-icons {
         display: flex;
         flex-direction: row;

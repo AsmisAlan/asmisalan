@@ -3,13 +3,13 @@ body.dark {
   color: #fff;
 }
 body.dark nav {
-  background-color: #bb14bb;
+  background-color: #351973;
 }
 body.dark .card {
   background-color: rgba(255, 255, 255, 0.2);
 }
 body.dark .btn {
-  background-color: #bd25a8;
+  background-color: #351973;
 }
 body.dark .divider {
   opacity: 0.2;
@@ -48,17 +48,24 @@ body.dark .collapsible .collapsible-body {
   border-color: #202123 !important;
 }
 
+.about {
+  max-height: 100%;
+}
+
+.profile-drawer {
+  position: relative;
+}
+.profile-drawer__container::before {
+  position: absolute !important;
+}
+.profile-drawer__container {
+  position: sticky;
+}
 .profile-drawer__photo {
   border-radius: 50%;
   padding: 10px;
   width: 80%;
 }
-
-.about {
-  max-height: 100%;
-  overflow: auto;
-}
-
 .profile-drawer__social-icons {
   display: flex;
   flex-direction: row;

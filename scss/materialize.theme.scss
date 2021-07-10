@@ -1,16 +1,19 @@
+$primaryColor: #351973;
+$secondaryColor: #0951d6;
+
 body.dark {
     background-color: #202123;
     color: #fff;
 
     nav {
-        background-color: #bb14bb;
+        background-color: $primaryColor;
     }
 
     .card {
         background-color: rgba(255, 255, 255, 0.2);
     }
     .btn {
-        background-color: #bd25a8;
+        background-color: $primaryColor;
     }
     .divider {
         opacity: 0.2;
