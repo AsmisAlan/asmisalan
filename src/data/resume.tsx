@@ -1,10 +1,11 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+import { Resume } from "./model";
 
-export const DATA = {
+export const DATA : Resume = {
   name: "Asmis Noe Alan",
   initials: "AA",
-  url: "",
+  url: "https://asmisalan.com",
   location: "Concepción del Uruguay, Entre Ríos, Argentina",
   locationLink: "https://www.google.com/maps/place/Concepción+del+Uruguay",
   description:
@@ -131,4 +132,25 @@ export const DATA = {
         "Course completed at the Autonomous University of Entre Ríos, Faculty of Science and Technology.",
     },
   ],
-} as const;
+  projects: [
+    {
+      title: "Sellers",
+      active: false,
+      dates: "2021",
+      description:
+        "A platform for sellers to manage their products, sales, and customers.",
+      technologies: ["Angular", "Firebase", "NestJs"],
+      href: "",
+      image: "",
+      video: "",
+      links: [
+        {
+          type: "GitHub",
+          icon: Icons.globe({}),
+          href: ""
+        },
+      ],
+    }
+  ],
+  hackathons: [],
+} ;
