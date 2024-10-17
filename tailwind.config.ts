@@ -11,6 +11,10 @@ const config = {
   ],
   prefix: "",
   theme: {
+    backgroundImage: {
+      "light-avatar": "url('/me.png')",
+      "dark-avatar": "url('/me.dark.png')",
+    },
     container: {
       center: true,
       padding: "2rem",

@@ -2,7 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 
-interface Props {
+export interface ExperienceProps {
   title: string;
   description: string;
   dates: string;
@@ -22,7 +22,7 @@ export function HackathonCard({
   location,
   image,
   links,
-}: Props) {
+}: ExperienceProps) {
   return (
     <li className="relative ml-10 py-4">
       <div className="absolute -left-16 top-2 flex items-center justify-center bg-white rounded-full">

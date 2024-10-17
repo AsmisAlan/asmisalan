@@ -1,4 +1,6 @@
+import { ExperienceProps } from "@/components/hackathon-card";
 import { Icons } from "@/components/icons";
+import { ProjectProps } from "@/components/project-card";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
 interface SocialMedia {
@@ -11,13 +13,7 @@ interface SocialMedia {
 interface Contact {
   email: string;
   tel: string;
-  social: {
-    GitHub: SocialMedia;
-    LinkedIn: SocialMedia;
-    X: SocialMedia;
-    Youtube: SocialMedia;
-    email: SocialMedia;
-  };
+  social: Record<string, SocialMedia>;
 }
 
 interface NavbarItem {
@@ -53,33 +49,6 @@ interface ProjectLink {
   icon: JSX.Element;
 }
 
-interface Project {
-  title: string;
-  href: string;
-  dates: string;
-  active: boolean;
-  description: string;
-  technologies: string[];
-  links: ProjectLink[];
-  image: string;
-  video: string;
-}
-
-interface Hackathon {
-  title: string;
-  dates: string;
-  location: string;
-  description: string;
-  image: string;
-  mlh?: string;
-  win?: string;
-  links: {
-    title?: string;
-    icon?: JSX.Element;
-    href?: string;
-  }[];
-}
-
 export interface Resume {
   name: string;
   initials: string;
@@ -88,12 +57,11 @@ export interface Resume {
   locationLink: string;
   description: string;
   summary: string;
-  avatarUrl: string;
   skills: string[];
   navbar: NavbarItem[];
   contact: Contact;
   work: WorkExperience[];
   education: Education[];
-  projects: Project[];
-  hackathons: Hackathon[];
+  projects: ProjectProps[];
+  experience: ExperienceProps[];
 }
