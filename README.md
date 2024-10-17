@@ -1,39 +1,12 @@
-# Portfolio
+# Hi! I'm Alan Asmis 👋
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+I'm a Software Engineer, Product Owner, and Technical Trainer passionate about building solutions, teaching, and leading teams. With over 6 years of experience, I have worked with a wide range of technologies, including .NET Core, Angular, and AI technologies. I lead multiple teams in delivering high-quality products for complex distributed environments.
 
-# Features
+## Contact
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+- 📧 Email: [asmisalan@gmail.com](mailto:asmisalan@gmail.com)
+- 🔗 GitHub: [asmisalan](https://github.com/asmisalan)
+- 💼 LinkedIn: [Alan Asmis](https://www.linkedin.com/in/asmisalan/)
+- 💬 X: [@alanasmis](https://x.com/@alanasmis)
 
-# Getting Started Locally
-
-1. Clone this repository to your local machine:
-
-   ```bash
-   git clone https://github.com/dillionverma/portfolio
-   ```
-
-2. Move to the cloned directory
-
-   ```bash
-   cd portfolio
-   ```
-
-3. Install dependencies:
-
-   ```bash
-   yarn install
-   ```
-
-4. Start the local Server:
-
-   ```bash
-   yarn dev
-   ```
-
-5. Open the [Config file](./src/data/resume.tsx) and make changes
+Want to know more about me? See my personal page [here](https://asmisalan.github.io/asmisalan/)
