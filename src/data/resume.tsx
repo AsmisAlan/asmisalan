@@ -121,11 +121,10 @@ export const DATA: Resume = {
   projects: [
     {
       title: "Suite 3.0",
-      active: true,
       dates: "2020 - Present",
       description:
         "A comprehensive platform aimed at upgrading the technology stack from .NET Framework to .NET Core and AngularJS to Angular. The suite manages the company's projects, tasks, and resources, providing a modern and scalable solution.",
-      technologies: [
+      tags: [
         ".NET Core",
         "MassTransit",
         "EFCore",
@@ -147,11 +146,10 @@ export const DATA: Resume = {
     },
     {
       title: "ITsynch Polaris",
-      active: true,
       dates: "Present",
       description:
         "This project focuses on integrating generative AI tools and technologies into ITsynch’s operations to enhance productivity, security, and innovation. The primary objective is to implement secure and effective generative AI systems, such as Semantic Kernel and Memory Kernel, to improve daily workflows and create Retrieval-Augmented Generation (RAG) architectures. The project also involves exploring AI-driven solutions to optimize internal and client-facing tasks, ensuring secure AI adoption across the company.",
-      technologies: [
+      tags: [
         "Semantic Kernel",
         "Memory Kernel",
         "Large Language Models (LLMs)",
@@ -168,10 +166,9 @@ export const DATA: Resume = {
     },
     {
       title: "Memento",
-      active: true,
       dates: "2024",
       description: "A local RAG architecture platform for managing projects.",
-      technologies: ["React", "NestJs", "Ollama", "CouchDB"],
+      tags: ["React", "NestJs", "Ollama", "CouchDB"],
       videoTemplate: (
         <iframe
           src="https://player.vimeo.com/video/967464719?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
@@ -186,19 +183,17 @@ export const DATA: Resume = {
     },
     {
       title: "Sellers",
-      active: false,
       dates: "2018",
       description:
         "A platform for sellers to manage their products, sales, and customers in private networks.",
-      technologies: ["Angular", "Firebase", "NodeJs"],
+      tags: ["Angular", "Firebase", "NodeJs"],
     },
     {
       title: "Dolphins",
-      active: false,
       dates: "2020",
       description:
         "A platform for managing and monitoring the health of dolphins in captivity.",
-      technologies: ["Python"],
+      tags: ["Python"],
     },
   ],
   experience: [
