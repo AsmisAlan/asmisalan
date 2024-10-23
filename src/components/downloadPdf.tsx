@@ -50,7 +50,7 @@ export function generateResumePDF(resume: Resume): void {
       leftY += 2; // Adjusted line spacing
     });
 
-    leftY = addText(doc, `${window.location.origin}`, margin, leftY, {
+    leftY = addText(doc, `${window.location.href}`, margin, leftY, {
       maxWidth: leftPanelMaxWidth,
       url: window.location.origin,
     });
