@@ -6,6 +6,7 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 interface SocialMedia {
   name: string;
   url: string;
+  displayAs: string;
   icon: (typeof Icons)[keyof typeof Icons];
   navbar: boolean;
 }
@@ -49,6 +50,11 @@ interface ProjectLink {
   icon: JSX.Element;
 }
 
+export interface Language {
+  name: string;
+  level: string;
+}
+
 export interface Resume {
   name: string;
   initials: string;
@@ -58,6 +64,7 @@ export interface Resume {
   description: string;
   summary: string;
   skills: string[];
+  languages: Language[];
   navbar: NavbarItem[];
   contact: Contact;
   work: WorkExperience[];

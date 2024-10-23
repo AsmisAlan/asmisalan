@@ -104,6 +104,22 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section id="languages">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+            <h2 className="text-xl font-bold">Languages</h2>
+          </BlurFade>
+          <div className="flex flex-wrap gap-1">
+            {DATA.languages.map((language, id) => (
+              <BlurFade key={id} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+                <Badge key={id}>
+                  {language.name} ({language.level})
+                </Badge>
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
@@ -156,16 +172,13 @@ export default function Page() {
                     Experience
                   </div>
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                    I enjoy leading and building solutions
+                    My Journey
                   </h2>
                   <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    Over the years, I’ve led teams, conducted technical
-                    interviews, and worked on various projects, including
-                    technology migrations, training programs, and developing
-                    software solutions. My journey has been defined by
-                    continuous learning, teaching others, and delivering
-                    high-quality products in collaboration with passionate
-                    professionals.
+                    Over the years, I’ve taken on the responsibility of driving
+                    high-scale technology transformations, managing development
+                    teams, and delivering advanced software solutions. Find
+                    bellow part of my journey.
                   </p>
                 </div>
               </div>

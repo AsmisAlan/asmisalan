@@ -2,6 +2,15 @@ import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 import { Resume } from "./model";
 
+// extended version
+// With over 6 years of experience, I’ve led and contributed to a wide range of projects and technologies. From maintaining legacy monolithic systems to managing a team of 15+ developers, I’ve driven the development of 70+ microservices, microfrontends, PWA apps, and native applications—all within a monorepository with CI/CD pipelines.
+
+// My expertise is rooted in distributed systems, particularly in the cruise industry, where data consolidation happens intermittently. I’ve led and implemented these systems across the globe, collaborating with diverse teams to ensure seamless deployment in various cruise companies worldwide.
+
+// An autodidact and entrepreneur at heart, I spend my free time developing independent tools and apps, including sales platforms, large event ticket system with distributed devices, and AI-driven solutions.
+
+// I thrive on challenges and always give my best to tackle them. Whether leading or collaborating, I enjoy teaching, sharing tools, and continuously learning, all while striving to deliver top-quality results and help others grow.
+
 export const DATA: Resume = {
   name: "Alan Asmis",
   initials: "AA",
@@ -9,29 +18,31 @@ export const DATA: Resume = {
   location: "Concepción del Uruguay, Entre Ríos, Argentina",
   locationLink: "https://www.google.com/maps/place/Concepción+del+Uruguay",
   description:
-    "Software Engineer, Product Owner, and Technical Trainer. Passionate about building solutions, teaching, and leading teams.",
-  summary:
-    "With over 6 years of experience in software engineering, I've worked with a wide range of technologies, from .NET Core to Angular, leading teams to deliver high-quality products. I also conduct technical interviews and teach Angular to company members.",
+    "Software Engineer, Product Owner, Technical Trainer, and AI Enthusiast. I love challenges and always give my best to address them.",
+  summary: `With over 6 years of experience, I’ve led a team of 15+ people to develop 70+ microservices, microfrontends, and PWA apps, all within a monorepository with CI/CD pipelines.
+
+I’ve led and implemented distributed systems across the globe, collaborating with diverse teams to ensure seamless deployment in various cruise companies worldwide.
+
+As an autodidact and entrepreneur, I also build independent tools and apps, including sales platforms, event systems, and AI-driven solutions.`,
   skills: [
     "TypeScript",
     "JavaScript",
-    "Python",
     "C#",
-    "C++ (Arduino)",
-    "Java",
-    "SQL",
-    "Firestore",
-    "Postgres",
-    "MySql",
+    "Relational Databases (SQL, Postgres, MySQL)",
+    "Document Databases (Firestore, CouchDB)",
+    "Vector Databases (Qdrant)",
     "Angular",
+    "React",
+    "GraphQL and REST",
     "NestJs",
-    "NHibernate",
-    "LINQ",
-    "Unity IoC",
-    "Flask",
-    "SQLAlchemy",
-    "Qt Designer",
-    "Arduino",
+    "Python",
+    ".NET Core",
+    ".NET Framework",
+    "C++ (Arduino)",
+  ],
+  languages: [
+    { name: "Spanish", level: "Native" },
+    { name: "English", level: "Professional" },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -44,12 +55,14 @@ export const DATA: Resume = {
       GitHub: {
         name: "GitHub",
         url: "https://github.com/asmisalan",
+        displayAs: "@asmisalan",
         icon: Icons.github,
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/asmisalan/",
+        displayAs: "@asmisalan",
         icon: Icons.linkedin,
         navbar: true,
       },
@@ -57,6 +70,7 @@ export const DATA: Resume = {
         name: "X",
         url: "https://x.com/@alanasmis",
         icon: Icons.x,
+        displayAs: "@alanasmis",
         navbar: true,
       },
     },
@@ -77,7 +91,7 @@ export const DATA: Resume = {
     },
     {
       company: "Nexos",
-      href: "#",
+      href: "",
       badges: [],
       location: "Argentina",
       title: "Founder",
@@ -89,7 +103,7 @@ export const DATA: Resume = {
     },
     {
       company: "GrowApps",
-      href: "#",
+      href: "",
       badges: [],
       location: "Argentina",
       title: "Co-founder & Developer",
@@ -104,18 +118,18 @@ export const DATA: Resume = {
     {
       school: "Autonomous University of Entre Ríos",
       href: "https://uader.edu.ar",
-      degree: "Analyst in Information Systems",
+      degree: "Bachelor's Degree in Information Systems",
       logoUrl: "/uader.png",
       start: "2014",
-      end: "2017",
+      end: "Present",
     },
     {
       school: "Autonomous University of Entre Ríos",
       href: "https://uader.edu.ar",
-      degree: "Bachelor's Degree in Information Systems (80% completed)",
+      degree: "Analyst in Information Systems",
       logoUrl: "/uader.png",
       start: "2014",
-      end: "Present",
+      end: "2017",
     },
   ],
   projects: [
@@ -166,9 +180,10 @@ export const DATA: Resume = {
     },
     {
       title: "Memento",
-      dates: "2024",
-      description: "A local RAG architecture platform for managing projects.",
-      tags: ["React", "NestJs", "Ollama", "CouchDB"],
+      dates: "Present",
+      description:
+        "A built-in offline solution for integrating RAG architectures with an intuitive interface. It features folder-based knowledge organization and RBAC integration for secure data management.",
+      tags: ["QDrant", "LlamaIndex", "React", "NestJs", "Ollama", "CouchDB"],
       videoTemplate: (
         <iframe
           src="https://player.vimeo.com/video/967464719?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
@@ -182,18 +197,48 @@ export const DATA: Resume = {
       ),
     },
     {
+      title: "Autopilots",
+      dates: "Present",
+      description:
+        "A customizable agent tool to integrate AI systems with distributed tools to generate any kind of content, including video, Audio, News, and more.",
+      videoTemplate: (
+        <>
+          <blockquote className="twitter-tweet" data-media-max-width="560">
+            <p lang="en" dir="ltr">
+              Autopilots wip, This demo connect ChatGPT, Mixtral and Eleven
+              labs… yes this AP (auto pilot) can be connected to others. More
+              updates in comming{" "}
+              <a href="https://t.co/jcjjx1ySMF">pic.twitter.com/jcjjx1ySMF</a>
+            </p>
+            &mdash; Alan Asmis (@alanasmis){" "}
+            <a href="https://twitter.com/alanasmis/status/1761563861121929576?ref_src=twsrc%5Etfw">
+              February 25, 2024
+            </a>
+          </blockquote>{" "}
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charSet="utf-8"
+          ></script>
+        </>
+      ),
+      tags: [
+        "nestJs",
+        "React",
+        "CoachDB",
+        "Scrum",
+        "OpenAI",
+        "Gemini",
+        "Remotion",
+        "ElevenLabs",
+      ],
+    },
+    {
       title: "Sellers",
       dates: "2018",
       description:
-        "A platform for sellers to manage their products, sales, and customers in private networks.",
-      tags: ["Angular", "Firebase", "NodeJs"],
-    },
-    {
-      title: "Dolphins",
-      dates: "2020",
-      description:
-        "A platform for managing and monitoring the health of dolphins in captivity.",
-      tags: ["Python"],
+        "A platform for sellers to manage their products, sales, customers and stock in private networks.",
+      tags: ["Angular", "MySql", "NodeJs"],
     },
   ],
   experience: [
@@ -228,6 +273,21 @@ export const DATA: Resume = {
       ],
     },
     {
+      title: "Systems implementation around the world",
+      dates: "2022 - Present",
+      location: "Remote",
+      description:
+        "I traveled to various countries to implement the systems developed and to guide trainings for all the departments involved on the cruise ships.",
+      image: "/itsynch.png",
+      links: [
+        {
+          title: "Implementation",
+          href: "https://www.linkedin.com/posts/itsynch-solutions_where-in-the-world-is-the-itsynch-team-activity-7188898658354872321-4mC7?utm_source=share&utm_medium=member_desktop",
+          icon: Icons.globe({}),
+        },
+      ],
+    },
+    {
       title: "Technical Interviews",
       dates: "2021 - Present",
       location: "Remote",
@@ -237,10 +297,11 @@ export const DATA: Resume = {
       links: [],
     },
     {
-      title: "Angular Trainer",
+      title: "Frontend Specialist",
       dates: "2020 - Present",
       location: "Remote",
-      description: "I teach Angular to new and current members of the company.",
+      description:
+        "I teach and guide every aspect related to frontend development, including libraries, frameworks, and best practices.",
       image: "/itsynch.png",
       links: [],
     },
@@ -296,8 +357,14 @@ export const DATA: Resume = {
       location: "INTI, Argentina",
       description:
         "Developed the 'Sistema de Georeferencia de Usuarios' used by the Instituto Nacional de Tecnología Industrial (INTI).",
-      image: "/georeferencia.png",
-      links: [],
+      image: "/inti.png",
+      links: [
+        {
+          href: "https://drive.google.com/file/d/0B6WU3PSmU9epdjU3VU9fUEc0Mkk/view?usp=sharing&resourcekey=0-wzCvgFsm4zuvxaPZNx2s4w",
+          title: "INTI",
+          icon: Icons.globe({}),
+        },
+      ],
     },
     {
       title: "Lecturer at Arduino Day 2017",
@@ -305,17 +372,29 @@ export const DATA: Resume = {
       location: "UADER FCyT, Concepción del Uruguay",
       description:
         'Lectured on "Connect Arduino: Multilanguage, Real-time Data for Multiple Users and Hacking" during Arduino Day 2017.',
-      image: "/arduino-day.png",
-      links: [],
+      image: "/arduino.png",
+      links: [
+        {
+          title: "Certificate",
+          href: "https://drive.google.com/file/d/0B6WU3PSmU9epOUlTdjlnM09reEU/view?usp=drive_link&resourcekey=0-JbVNcBLlu-kTlFICSv-IEA",
+          icon: Icons.globe({}),
+        },
+      ],
     },
     {
       title: "Teacher in the 'Introduction to Programming' Workshop",
       dates: "2016 - 2017",
-      location: "Sadoski Foundation, Argentina",
+      location: "Sadosky Foundation, Argentina",
       description:
-        "Taught an introductory programming workshop developed by the Sadoski Foundation and the National Ministry of Science and Technology.",
-      image: "/programming-workshop.png",
-      links: [],
+        "Taught an introductory programming workshop developed by the Sadosky Foundation and the National Ministry of Science and Technology.",
+      image: "/sadosky.png",
+      links: [
+        {
+          href: "https://drive.google.com/file/d/0B6WU3PSmU9epdkFGb19vZXVsUk0/view?usp=sharing&resourcekey=0-X25ZnmSk3LlTt84thtKfBA",
+          icon: Icons.globe({}),
+          title: "Certificate",
+        },
+      ],
     },
     {
       title:
@@ -324,8 +403,14 @@ export const DATA: Resume = {
       location: "UADER FCyT, Concepción del Uruguay",
       description:
         "Gave a talk on graphical interfaces during the international programmer’s day.",
-      image: "/python-qt.png",
-      links: [],
+      image: "/python.png",
+      links: [
+        {
+          title: "Certificate",
+          href: "https://drive.google.com/file/d/0B6WU3PSmU9epajBMMjVoRmF3UXZNOXg0S0ZTeTJYTl90bXRv/view?usp=drive_link&resourcekey=0-muFbK3qnVxhkz5Akv-MpWg",
+          icon: Icons.globe({}),
+        },
+      ],
     },
     {
       title: "University Volunteer for 'Fomenting Education in TICs'",
@@ -333,8 +418,14 @@ export const DATA: Resume = {
       location: "UADER FCyT, Concepción del Uruguay",
       description:
         "Volunteered for the project 'Fomenting Education in TICs', focusing on promoting tech education.",
-      image: "/tic-education.png",
-      links: [],
+      image: "/uader.png",
+      links: [
+        {
+          icon: Icons.globe({}),
+          title: "Certificate",
+          href: "https://drive.google.com/file/d/0B6WU3PSmU9epajBMMjVoRmF3UXZNOXg0S0ZTeTJYTl90bXRv/view?usp=sharing&resourcekey=0-muFbK3qnVxhkz5Akv-MpWg",
+        },
+      ],
     },
     {
       title: "University Volunteer: Programming Workshops",
@@ -342,7 +433,7 @@ export const DATA: Resume = {
       location: "UADER FCyT, Concepción del Uruguay",
       description:
         "Volunteered in workshops for 'Introduction to Programming' and 'Object-Oriented Programming with Python'.",
-      image: "/volunteer.png",
+      image: "/python.png",
       links: [],
     },
     {
@@ -351,8 +442,14 @@ export const DATA: Resume = {
       location: "Autonomous University of Entre Ríos, Concepción del Uruguay",
       description:
         "Graduated with a degree in Information Systems Analysis from the Autonomous University of Entre Ríos.",
-      image: "/analyst-degree.png",
-      links: [],
+      image: "/uader.png",
+      links: [
+        {
+          href: "https://drive.google.com/file/d/1X-510Unxt7FB1OORzTvhJSTuNa49EiBW/view?usp=drive_link",
+          title: "Diploma",
+          icon: Icons.globe({}),
+        },
+      ],
     },
     {
       title: "Student of Bachelor's in Information Systems",
@@ -360,8 +457,14 @@ export const DATA: Resume = {
       location: "Autonomous University of Entre Ríos, Concepción del Uruguay",
       description:
         "Currently completing a Bachelor's degree in Information Systems at the Autonomous University of Entre Ríos.",
-      image: "/bachelors-degree.png",
-      links: [],
+      image: "/uader.png",
+      links: [
+        {
+          href: "https://drive.google.com/file/d/1X-510Unxt7FB1OORzTvhJSTuNa49EiBW/view?usp=drive_link",
+          title: "Diploma",
+          icon: Icons.globe({}),
+        },
+      ],
     },
     {
       title: "Research Project 'Kronos'",
@@ -369,8 +472,14 @@ export const DATA: Resume = {
       location: "Autonomous University of Entre Ríos",
       description:
         "Participated in the research project 'Kronos', contributing to the paper 'Parametric Prediction Model using Expert System and Fuzzy Harmonic System', published by Springer.",
-      image: "/kronos.png",
-      links: [],
+      image: "/uader.png",
+      links: [
+        {
+          title: "Paper",
+          icon: Icons.globe({}),
+          href: "https://sedici.unlp.edu.ar/bitstream/handle/10915/63486/Documento_completo.pdf-PDFA.pdf?sequence=1&isAllowed=y",
+        },
+      ],
     },
     {
       title: "XXII Argentine Congress of Computer Science (CACIC)",
@@ -379,7 +488,13 @@ export const DATA: Resume = {
       description:
         "Participated as an assistant at the XXII Argentine Congress of Computer Science (CACIC).",
       image: "/cacic.png",
-      links: [],
+      links: [
+        {
+          title: "Certificate",
+          href: "https://drive.google.com/file/d/0B6WU3PSmU9epUTlONzZFaDlxZi1VY3NjaDN6T1JDUEtpRWJR/view?usp=drive_link&resourcekey=0-tRjXD0SUfcIxSWCB-SG-FA",
+          icon: Icons.globe({}),
+        },
+      ],
     },
     {
       title: "Course 'Python Level 1'",
@@ -388,7 +503,13 @@ export const DATA: Resume = {
       description:
         "Completed the 'Python Level 1' course at the Autonomous University of Entre Ríos.",
       image: "/python.png",
-      links: [],
+      links: [
+        {
+          icon: Icons.globe({}),
+          title: "Certificate",
+          href: "https://drive.google.com/file/d/0B6WU3PSmU9epeHF1YlM3YXRTTmc/view?usp=sharing&resourcekey=0-8rMCGKbqiRW2I8bTM_L-fQ",
+        },
+      ],
     },
     {
       title: "Course 'Java Programming Distance Level 1'",
@@ -397,7 +518,13 @@ export const DATA: Resume = {
       description:
         "Completed the 'Java Programming Distance Level 1' course, organized by the Gugler Research Lab.",
       image: "/java.png",
-      links: [],
+      links: [
+        {
+          icon: Icons.globe({}),
+          title: "Certificate",
+          href: "https://drive.google.com/file/d/0B6WU3PSmU9epVVVWZTByU0xxMDQ/view?usp=sharing&resourcekey=0-Qht9zJlolDrV1jQ3RYwU6w",
+        },
+      ],
     },
     {
       title:
@@ -406,12 +533,17 @@ export const DATA: Resume = {
       location: "RedAUTI",
       description:
         "Completed an international distance course on 'Introduction to Interactive Digital Television', with a final project on the GINGA NCL platform.",
-      image: "/ginga.png",
+      image: "/uader.png",
       links: [
         {
           title: "Final Project",
           href: "https://www.youtube.com/watch?v=QiTXmlPUIV0",
           icon: Icons.globe({}),
+        },
+        {
+          icon: Icons.globe({}),
+          title: "Certificate",
+          href: "https://drive.google.com/file/d/0B6WU3PSmU9epYVdjSW1jS3NtQmN6TTdzM2syRU12TnFhQ3hr/view?usp=sharing&resourcekey=0-eLSmYKcYo1s0IWCeJNpADg",
         },
       ],
     },
@@ -421,8 +553,14 @@ export const DATA: Resume = {
       location: "Autonomous University of Entre Ríos, Concepción del Uruguay",
       description:
         "Participated in the Second Workshop on Information Security, organized by the Gugler Research Lab.",
-      image: "/security.png",
-      links: [],
+      image: "/uader.png",
+      links: [
+        {
+          icon: Icons.globe({}),
+          title: "Certificate",
+          href: "https://drive.google.com/file/d/0B6WU3PSmU9epbnhZYTZyTmtUQm8/view?usp=sharing&resourcekey=0-D3vtiTM7pFz7pBlCxkviIQ",
+        },
+      ],
     },
   ],
 };
