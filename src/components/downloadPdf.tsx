@@ -50,10 +50,17 @@ export function generateResumePDF(resume: Resume): void {
       leftY += 2; // Adjusted line spacing
     });
 
-    leftY = addText(doc, `${window.location.href}`, margin, leftY, {
-      maxWidth: leftPanelMaxWidth,
-      url: window.location.origin,
-    });
+    leftY = addText(
+      doc,
+      `Web:
+      ${window.location.href}`,
+      margin,
+      leftY,
+      {
+        maxWidth: leftPanelMaxWidth,
+        url: window.location.href,
+      }
+    );
     leftY += 2; // Adjusted line spacing
 
     // Social Media Links
@@ -61,7 +68,8 @@ export function generateResumePDF(resume: Resume): void {
       const socialMedia = resume.contact.social[key];
       leftY = addText(
         doc,
-        `${socialMedia.name}: ${socialMedia.displayAs}`,
+        `${socialMedia.name}: 
+        ${socialMedia.displayAs}`,
         margin,
         leftY,
         {
