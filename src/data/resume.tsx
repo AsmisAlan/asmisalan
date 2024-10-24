@@ -2,14 +2,7 @@ import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 import { Resume } from "./model";
 
-// extended version
-// With over 6 years of experience, I’ve led and contributed to a wide range of projects and technologies. From maintaining legacy monolithic systems to managing a team of 15+ developers, I’ve driven the development of 70+ microservices, microfrontends, PWA apps, and native applications—all within a monorepository with CI/CD pipelines.
-
-// My expertise is rooted in distributed systems, particularly in the cruise industry, where data consolidation happens intermittently. I’ve led and implemented these systems across the globe, collaborating with diverse teams to ensure seamless deployment in various cruise companies worldwide.
-
-// An autodidact and entrepreneur at heart, I spend my free time developing independent tools and apps, including sales platforms, large event ticket system with distributed devices, and AI-driven solutions.
-
-// I thrive on challenges and always give my best to tackle them. Whether leading or collaborating, I enjoy teaching, sharing tools, and continuously learning, all while striving to deliver top-quality results and help others grow.
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export const DATA: Resume = {
   name: "Alan Asmis",
@@ -83,7 +76,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       badges: [],
       location: "Remote",
       title: "Software Engineer, Technical Lead, Project Manager, Trainer",
-      logoUrl: "/itsynch.png",
+      logoUrl: `${basePath}/itsynch.png`,
       start: "2018",
       end: "Present",
       description:
@@ -95,7 +88,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       badges: [],
       location: "Argentina",
       title: "Founder",
-      logoUrl: "/nexos.png",
+      logoUrl: `${basePath}/nexos.png`,
       start: "2024",
       end: "present",
       description:
@@ -107,7 +100,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       badges: [],
       location: "Argentina",
       title: "Co-founder & Developer",
-      logoUrl: "/growapps.png",
+      logoUrl: `${basePath}/growapps.png`,
       start: "2017",
       end: "2022",
       description:
@@ -119,7 +112,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       school: "Autonomous University of Entre Ríos",
       href: "https://uader.edu.ar",
       degree: "Bachelor's Degree in Information Systems",
-      logoUrl: "/uader.png",
+      logoUrl: `${basePath}/uader.png`,
       start: "2014",
       end: "Present",
     },
@@ -127,7 +120,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       school: "Autonomous University of Entre Ríos",
       href: "https://uader.edu.ar",
       degree: "Analyst in Information Systems",
-      logoUrl: "/uader.png",
+      logoUrl: `${basePath}/uader.png`,
       start: "2014",
       end: "2017",
     },
@@ -248,7 +241,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "Remote",
       description:
         "I am currently leading 4 teams on a large-scale project called Suite 3.0. This project represents a cutting-edge technology that consolidates the company's applications, common services, and a comprehensive set of libraries known as the framework, all within a single repository. Suite 3.0 is the most ambitious project in the company's history, not only in terms of its scope and complexity but also in its goal of modernizing and streamlining our entire technology stack to enhance scalability and efficiency.",
-      image: "/itsynch.png",
+      image: `${basePath}/itsynch.png`,
       links: [
         {
           title: "ITsynch",
@@ -263,7 +256,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "Remote",
       description:
         "As the Project Lead and AI Specialist for the Polaris initiative, I am leading the company's efforts to integrate AI technologies into our operations and products. This project started with the AI Kickoff Event, where we explored the pros and cons of using AI, how to securely implement it, and its current limitations. During the event, I introduced tools that can optimize daily tasks and improve productivity for both our team and our clients. I am currently teaching developers about using semantic kernel, memory kernel, and concepts such as LLMs and RAG to enhance our applications. In parallel, I am working on integrating internal data with a local LLM and generating code with AI, pushing the boundaries of our development capabilities. These innovations will not only streamline our workflows but also benefit our clients as we incorporate AI-driven features into our products.",
-      image: "/polaris.png",
+      image: `${basePath}/polaris.png`,
       links: [
         {
           title: "AI Kickoff Event",
@@ -278,7 +271,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "Remote",
       description:
         "I traveled to various countries to implement the systems developed and to guide trainings for all the departments involved on the cruise ships.",
-      image: "/itsynch.png",
+      image: `${basePath}/itsynch.png`,
       links: [
         {
           title: "Implementation",
@@ -293,7 +286,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "Remote",
       description:
         "I conduct technical interviews with candidates for development positions.",
-      image: "/itsynch.png",
+      image: `${basePath}/itsynch.png`,
       links: [],
     },
     {
@@ -302,7 +295,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "Remote",
       description:
         "I teach and guide every aspect related to frontend development, including libraries, frameworks, and best practices.",
-      image: "/itsynch.png",
+      image: `${basePath}/itsynch.png`,
       links: [],
     },
     {
@@ -311,7 +304,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "Remote",
       description:
         "I led a team of 4 engineers to develop a tool for managing distributed databases from multiple applications with poor network connection systems. We used TDD, .NET Core 5, EFCore, GQL, and Scrum methodologies to deliver the project successfully, without any issues. Today, this tool is a standard in the company and has been implemented across multiple cruise companies, running smoothly without issues.",
-      image: "/itsynch.png",
+      image: `${basePath}/itsynch.png`,
       links: [
         {
           title: "DataSync case of success",
@@ -326,7 +319,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "Remote",
       description:
         "I have been involved in migrating ITsynch's technology stack from .NET Framework to .NET Core, and from AngularJS to Angular, working with technologies like HotChocolate, MassTransit, EFCore, XUnit, and more.",
-      image: "/itsynch.png",
+      image: `${basePath}/itsynch.png`,
       links: [
         {
           title: "ITsynch",
@@ -341,7 +334,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "Remote",
       description:
         "GrowApps is a project where we create web apps using NodeJs, Firebase, Google Cloud Platform, Angular, Ionic, and Electron.",
-      image: "/growapps.png",
+      image: `${basePath}/growapps.png`,
       links: [
         {
           title: "GrowApps",
@@ -357,7 +350,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "INTI, Argentina",
       description:
         "Developed the 'Sistema de Georeferencia de Usuarios' used by the Instituto Nacional de Tecnología Industrial (INTI).",
-      image: "/inti.png",
+      image: `${basePath}/inti.png`,
       links: [
         {
           href: "https://drive.google.com/file/d/0B6WU3PSmU9epdjU3VU9fUEc0Mkk/view?usp=sharing&resourcekey=0-wzCvgFsm4zuvxaPZNx2s4w",
@@ -372,7 +365,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "UADER FCyT, Concepción del Uruguay",
       description:
         'Lectured on "Connect Arduino: Multilanguage, Real-time Data for Multiple Users and Hacking" during Arduino Day 2017.',
-      image: "/arduino.png",
+      image: `${basePath}/arduino.png`,
       links: [
         {
           title: "Certificate",
@@ -387,7 +380,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "Sadosky Foundation, Argentina",
       description:
         "Taught an introductory programming workshop developed by the Sadosky Foundation and the National Ministry of Science and Technology.",
-      image: "/sadosky.png",
+      image: `${basePath}/sadosky.png`,
       links: [
         {
           href: "https://drive.google.com/file/d/0B6WU3PSmU9epdkFGb19vZXVsUk0/view?usp=sharing&resourcekey=0-X25ZnmSk3LlTt84thtKfBA",
@@ -403,7 +396,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "UADER FCyT, Concepción del Uruguay",
       description:
         "Gave a talk on graphical interfaces during the international programmer’s day.",
-      image: "/python.png",
+      image: `${basePath}/python.png`,
       links: [
         {
           title: "Certificate",
@@ -418,7 +411,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "UADER FCyT, Concepción del Uruguay",
       description:
         "Volunteered for the project 'Fomenting Education in TICs', focusing on promoting tech education.",
-      image: "/uader.png",
+      image: `${basePath}/uader.png`,
       links: [
         {
           icon: Icons.globe({}),
@@ -433,7 +426,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "UADER FCyT, Concepción del Uruguay",
       description:
         "Volunteered in workshops for 'Introduction to Programming' and 'Object-Oriented Programming with Python'.",
-      image: "/python.png",
+      image: `${basePath}/python.png`,
       links: [],
     },
     {
@@ -442,7 +435,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "Autonomous University of Entre Ríos, Concepción del Uruguay",
       description:
         "Graduated with a degree in Information Systems Analysis from the Autonomous University of Entre Ríos.",
-      image: "/uader.png",
+      image: `${basePath}/uader.png`,
       links: [
         {
           href: "https://drive.google.com/file/d/1X-510Unxt7FB1OORzTvhJSTuNa49EiBW/view?usp=drive_link",
@@ -457,7 +450,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "Autonomous University of Entre Ríos, Concepción del Uruguay",
       description:
         "Currently completing a Bachelor's degree in Information Systems at the Autonomous University of Entre Ríos.",
-      image: "/uader.png",
+      image: `${basePath}/uader.png`,
       links: [
         {
           href: "https://drive.google.com/file/d/1X-510Unxt7FB1OORzTvhJSTuNa49EiBW/view?usp=drive_link",
@@ -472,7 +465,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "Autonomous University of Entre Ríos",
       description:
         "Participated in the research project 'Kronos', contributing to the paper 'Parametric Prediction Model using Expert System and Fuzzy Harmonic System', published by Springer.",
-      image: "/uader.png",
+      image: `${basePath}/uader.png`,
       links: [
         {
           title: "Paper",
@@ -487,7 +480,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "San Luis, Argentina",
       description:
         "Participated as an assistant at the XXII Argentine Congress of Computer Science (CACIC).",
-      image: "/cacic.png",
+      image: `${basePath}/cacic.png`,
       links: [
         {
           title: "Certificate",
@@ -502,7 +495,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "Autonomous University of Entre Ríos, Concepción del Uruguay",
       description:
         "Completed the 'Python Level 1' course at the Autonomous University of Entre Ríos.",
-      image: "/python.png",
+      image: `${basePath}/python.png`,
       links: [
         {
           icon: Icons.globe({}),
@@ -517,7 +510,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "Autonomous University of Entre Ríos, Paraná",
       description:
         "Completed the 'Java Programming Distance Level 1' course, organized by the Gugler Research Lab.",
-      image: "/java.png",
+      image: `${basePath}/java.png`,
       links: [
         {
           icon: Icons.globe({}),
@@ -533,7 +526,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "RedAUTI",
       description:
         "Completed an international distance course on 'Introduction to Interactive Digital Television', with a final project on the GINGA NCL platform.",
-      image: "/uader.png",
+      image: `${basePath}/uader.png`,
       links: [
         {
           title: "Final Project",
@@ -553,7 +546,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
       location: "Autonomous University of Entre Ríos, Concepción del Uruguay",
       description:
         "Participated in the Second Workshop on Information Security, organized by the Gugler Research Lab.",
-      image: "/uader.png",
+      image: `${basePath}/uader.png`,
       links: [
         {
           icon: Icons.globe({}),
