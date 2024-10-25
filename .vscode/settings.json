@@ -1,31 +1,36 @@
 {
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
-    "[md]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.wordWrap": "on",
-    "editor.rulers": [80],
-    "editor.formatOnSave": true,
-    "workbench.colorCustomizations": {
-        "activityBar.activeBackground": "#8a2ca2",
-        "activityBar.activeBorder": "#af9530",
-        "activityBar.background": "#8a2ca2",
-        "activityBar.foreground": "#e7e7e7",
-        "activityBar.inactiveForeground": "#e7e7e799",
-        "activityBarBadge.background": "#af9530",
-        "activityBarBadge.foreground": "#15202b",
-        "statusBar.background": "#68217a",
-        "statusBar.foreground": "#e7e7e7",
-        "statusBarItem.hoverBackground": "#8a2ca2",
-        "titleBar.activeBackground": "#68217a",
-        "titleBar.activeForeground": "#e7e7e7",
-        "titleBar.inactiveBackground": "#68217a99",
-        "titleBar.inactiveForeground": "#e7e7e799"
-    },
-    "peacock.color": "#68217A"
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[md]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.wordWrap": "on",
+  "editor.rulers": [80],
+  "editor.formatOnSave": true,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#8a2ca2",
+    "activityBar.activeBorder": "#af9530",
+    "activityBar.background": "#8a2ca2",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#af9530",
+    "activityBarBadge.foreground": "#15202b",
+    "statusBar.background": "#68217a",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#8a2ca2",
+    "titleBar.activeBackground": "#68217a",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#68217a99",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#68217A",
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/out": true
+  }
 }
