@@ -1,6 +1,8 @@
 import type { Config } from "tailwindcss";
 import { fontFamily } from "tailwindcss/defaultTheme";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const config = {
   darkMode: ["class"],
   content: [
@@ -12,8 +14,8 @@ const config = {
   prefix: "",
   theme: {
     backgroundImage: {
-      "light-avatar": "url('/me.png')",
-      "dark-avatar": "url('/me.dark.png')",
+      "light-avatar": `url('${basePath}/me.png')`,
+      "dark-avatar": `url('${basePath}/me-dark.png')`,
     },
     container: {
       center: true,
