@@ -84,7 +84,7 @@ As an autodidact and entrepreneur, I also build independent tools and apps, incl
     },
     {
       company: "Nexos",
-      href: "",
+      href: "https://nexosdi.com",
       badges: [],
       location: "Argentina",
       title: "Founder",
